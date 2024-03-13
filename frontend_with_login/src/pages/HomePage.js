@@ -9,6 +9,7 @@ import {FaStar} from "react-icons/fa6"
 import NewProducer from './NewProducer';
 import TopCategory from './TopCategory';
 import Typed from 'typed.js';
+import FeaturedProduct from './FeaturedProduct';
 
 const HomePage = () => {
   useEffect(() => {
@@ -125,14 +126,14 @@ const HomePage = () => {
           </div>
         </section>
 
-        <section style={{ marginTop: '40px' }}>
-      <div className='my-12 px-4 lg:px-24 '>
-        <h2 className='text-5xl font-bold text-center mb-10 leading-snug'>Featured Products</h2>
-    </div>
-    </section>
+        <section style={{ marginTop: '20px' }}>
+      <FeaturedProduct/>
+      </section>
       <section style={{ marginTop: '20px' }}>
       <div className='my-12 px-4 lg:px-24 '>
-        <h2 className='text-5xl font-bold text-center mb-10 leading-snug'>Top Category</h2>
+      <h2 style={{ marginTop: '50px', fontFamily: 'Poppins, sans-serif', fontWeight: '600', fontSize: '46px' }} 
+      className='text-5xl font-bold text-center mb-10 leading-snug'>Top Category</h2>
+
     </div>
       </section>
 
@@ -150,11 +151,14 @@ const HomePage = () => {
       <section style={{ marginTop: '40px' }}>
       
       </section>
-        <h2 className='text-5xl font-bold text-right mb-10 leading-snug'>Client Testimonial</h2>
+      <h2 style={{ marginTop: '50px', fontFamily: 'Poppins, sans-serif', fontWeight: '600', fontSize: '46px' }} 
+      className='text-5xl font-bold text-center mb-10 leading-snug'>Client Testimonial</h2>
+
         <section style={{ marginTop: '40px' }}>
       
       </section>
         <div>
+          
         <Swiper
         slidesPerView={1}
         spaceBetween={30}
@@ -292,8 +296,9 @@ const HomePage = () => {
 
       <section>
       <div className='my-12 px-4 lg:px-24 ' style={{ marginTop: '40px' }}>
-        <h2 className='text-xm font-bold text-center mb-10 leading-snug'>Follow us on Instagram</h2>
-        <div className='flex justify-center items-center gap-4'>
+      <h2 style={{ marginTop: '50px', fontFamily: 'Poppins, sans-serif', fontWeight: '600', fontSize: '46px' }} 
+      className='text-5xl font-bold text-center mb-10 leading-snug'>Follow Us on Instagram</h2>
+      <div className='flex justify-center items-center gap-4'>
        
         <img src="/images/close-up-arrangement-modern-vases.jpg" alt='Instagram Pic 1' style={{ width: '140px', height: '150px', objectFit: 'cover' }} />
         <img src="/images/close-up-fresh-coconut-with-oranges-pineapple.jpg" alt='Instagram Pic 2' style={{ width: '150px', height: '150px', objectFit: 'cover' }} />
@@ -313,8 +318,6 @@ const HomePage = () => {
       </section>
 
       
-
-
 
       </Layout>
     </>
